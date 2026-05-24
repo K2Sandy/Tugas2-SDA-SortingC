@@ -5,7 +5,7 @@
 // fungsi tampiilin nilai
 void printArray(int arr[], int n, int limit) {
 for (int i = 0; i < limit && i< n; i++) {
-    print("%d", arr[i]);
+    printf("%d ", arr[i]);
 }
     printf("... (menampilkan %d data pertama)\n", limit);
 }
@@ -49,7 +49,11 @@ int main(){
      }
 
      //acak datanya, sbnrnya sudah diacak tapi biar sesuai tugas aja
-     printf ("=== Insertion Sort ===\n\n");
+     shuffleData(data, n);
+
+     printf ("=== Insertion Sort ===\n");
+     
+    printf("\nData Sebelum sorting:\n");
      printArray (data, n, 20);
 
      // Mulai menghitung waktu
@@ -58,10 +62,9 @@ int main(){
     // Jalankan algoritma
     insertionSort(data, n);
 
-    // Jalankan algoritma
-    insertionSort(data, n);
+    clock_t end_time = clock();
 
-    printf("\nData SETELAH sorting:\n");
+    printf("\nData Setelah sorting:\n");
     printArray(data, n, 20);
 
     // Menghitung durasi eksekusi dalam detik
