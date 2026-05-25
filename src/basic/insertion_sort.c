@@ -25,7 +25,6 @@ void jalankanInsertionSort() {
     for (int i = 0; i < n; i++ ){
         data[i] = (rand() % 10000) + 1; 
     }
-
     // Shuffle data menggunakan fungsi dari utils.c
     shuffleData(data, n);
 
