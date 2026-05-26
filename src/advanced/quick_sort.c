@@ -34,7 +34,7 @@ void quick_sort(char *arr[], int low, int high) {
 
 void jalankan_quick_sort() {
     int word_count = 0;
-    // 
+    // Membaca dataset menggunakan utils
     char **word_list = read_words_file("advanced/data/words.txt", &word_count);
 
     if (word_list == NULL) {
