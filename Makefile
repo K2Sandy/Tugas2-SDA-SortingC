@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -std=c99 -I./include
 
-SRCS = main.c \
+SRCS = src/main.c \
 $(wildcard src/basic/*.c) \
 $(wildcard src/advanced/*.c) \
 $(wildcard src/utils/*.c)
