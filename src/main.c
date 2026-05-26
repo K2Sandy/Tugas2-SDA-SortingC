@@ -59,7 +59,7 @@ int main() {
                      // Isi sendiri yak
                 } 
                 else if (pilihan_sub == 2) {
-                     // Isi sendiri yak
+                     jalankan_quick_sort();
                 } 
                 else if (pilihan_sub == 3) {
                      // Isi sendiri yak
