@@ -43,3 +43,19 @@ void jalankan_Shell_sort() {
 
     printf("\n=== Shell Sort: DATA SEBELUM SORTING ===\n");
     printArrayString(word_list, word_count, DISPLAY_LIMIT);
+
+    // 3. Hitung waktu eksekusi
+    clock_t start = clock();
+    Shell_sort(word_list, word_count);
+    clock_t end = clock();
+
+    printf("\n=== Shell SORT: DATA SETELAH SORTING ===\n");
+    printArrayString(word_list, word_count, DISPLAY_LIMIT);
+
+    // 4. Kalkulasi durasi
+    double durasi = ((double)(end - start)) / CLOCKS_PER_SEC;
+    printf("\nWaktu eksekusi Shell Sort: %f detik\n", durasi);
+
+    // 5. Bersihkan memori menggunakan utils
+    free_word_list(word_list, word_count);
+}
