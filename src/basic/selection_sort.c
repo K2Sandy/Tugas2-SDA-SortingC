@@ -18,3 +18,14 @@ void SelectionSort(int arr[], int n){
         }
     }
 }
+void jalankanSelectionSort() {
+    int n = 1000;
+    int data[n];
+
+    // Generate data
+    for (int i = 0; i < n; i++ ){
+        data[i] = (rand() % 10000) + 1; 
+    }
+
+    // Shuffle data menggunakan fungsi dari utils.c
+    shuffleData(data, n);
