@@ -29,3 +29,18 @@ void jalankanSelectionSort() {
 
     // Shuffle data menggunakan fungsi dari utils.c
     shuffleData(data, n);
+ printf("\nData Sebelum sorting:\n");
+    printArray(data, n, 10);
+
+    // Hitung waktu dan jalankan algoritma murni
+    clock_t start_time = clock();
+    SelectionSort(data, n);
+    clock_t end_time = clock();
+
+    printf("\nData Setelah sorting:\n");
+    printArray(data, n, 10);
+
+    // Kalkulasi dan print waktu
+    double time_spent = (double)(end_time - start_time) / CLOCKS_PER_SEC;
+    printf("\nWaktu eksekusi Selection Sort: %f detik\n", time_spent);
+}
