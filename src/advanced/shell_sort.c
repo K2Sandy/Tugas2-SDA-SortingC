@@ -36,3 +36,10 @@ void jalankan_Shell_sort() {
         printf("Pastikan file diletakkan di tempat yang benar.\n");
         return;
     }
+    printf("\n[Sukses] Berhasil membaca %d kata dari file.\n", word_count);
+
+    // 2. Mengacak data menggunakan utils
+    shuffleDataString(word_list, word_count);
+
+    printf("\n=== Shell Sort: DATA SEBELUM SORTING ===\n");
+    printArrayString(word_list, word_count, DISPLAY_LIMIT);
