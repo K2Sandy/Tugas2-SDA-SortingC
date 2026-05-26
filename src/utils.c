@@ -19,3 +19,9 @@ void shuffleData(int arr[], int n){
         arr[j] = temp;
     }
 }
+// Fungsi untuk menukar dua integer
+void swap_int(int *a, int *b) { //fungsi swap bro.
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
