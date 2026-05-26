@@ -9,7 +9,8 @@ void insertionSort(int arr[], int n);
 
 // Advance Sorting 
 
-void jalankan_merge_sort();
+void merge_sort(char *arr[], int left, int right);
+    void jalankan_merge_sort();
 void quick_sort(char *arr[], int low, int high);
     void jalankan_quick_sort();
 
