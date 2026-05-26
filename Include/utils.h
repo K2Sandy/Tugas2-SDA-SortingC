@@ -1,23 +1,16 @@
 #ifndef UTILS_H
 #define UTILS_H
 
-// fungsi bantuan
-void printArray(int arr[], int n, int limit);
-void shuffleData(int arr[], int n);
-<<<<<<< HEAD
-void swap_int(int *a, int *b);
-#endif
-=======
-
-// === UNTUK INTEGER (Bubble Sort) ===
+// === UNTUK DATA INTEGER (Sorting Dasar) ===
 void printArray(int arr[], int n, int limit);
 void shuffleData(int arr[], int n);
 void swap_int(int *a, int *b);
 
-// === UNTUK STRING (Quick Sort) ===
+// === UNTUK DATA STRING (Advance Sorting) ===
 void printArrayString(char *arr[], int n, int limit);
 void shuffleDataString(char *arr[], int n);
 void swap_string(char **a, char **b);
+char** read_words_file(const char *filename, int *word_count);
+void free_word_list(char **word_list, int word_count);
 
 #endif
->>>>>>> 2b115e726e26543bba4fc11a87e5a7f684c6eb72
