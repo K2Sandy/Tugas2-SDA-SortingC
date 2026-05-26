@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
-#include "../include/utils.h"
-#include "../include/sorting.h"
+#include "../../include/utils.h"
+#include "../../include/sorting.h"
 
 #define DISPLAY_LIMIT 10
 

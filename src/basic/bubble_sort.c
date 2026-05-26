@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include "../include/utils.h"
-#include "../include/sorting.h"
+#include "../../include/utils.h"
+#include "../../include/sorting.h"
 
 #define DATA_SIZE_INT 1000
 #define DISPLAY_LIMIT 10
