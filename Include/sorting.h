@@ -6,12 +6,15 @@ void bubble_sort(int arr[], int n);
     void jalankan_bubble_sort();
 void insertionSort(int arr[], int n);
     void jalankanInsertionSort(); 
-
+void SelectionSort(int arr[], int n);
+    void jalankanSelectionSort();
 // Advance Sorting 
 
 void merge_sort(char *arr[], int left, int right);
     void jalankan_merge_sort();
 void quick_sort(char *arr[], int low, int high);
     void jalankan_quick_sort();
+void Shell_sort(char *arr[], int n);
+    void jalankan_Shell_sort();
 
 #endif

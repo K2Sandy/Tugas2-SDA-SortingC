@@ -35,7 +35,7 @@ int main() {
                     jalankanInsertionSort(); 
                 } 
                 else if (pilihan_sub == 3) {
-                     // Isi sendiri yak
+                    jalankanSelectionSort();
                 } 
                 else if (pilihan_sub == 4) {
                     break; 
@@ -62,7 +62,7 @@ int main() {
                      jalankan_quick_sort();
                 } 
                 else if (pilihan_sub == 3) {
-                     // Isi sendiri yak
+                     jalankan_Shell_sort();
                 } 
                 else if (pilihan_sub == 4) {
                     break; 
