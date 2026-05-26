@@ -3,6 +3,7 @@
 
 // Basic Sorting 
 void bubble_sort(int arr[], int n);
+    void jalankan_bubble_sort();
 
 void insertionSort(int arr[], int n);
     void jalankanInsertionSort(); 
