@@ -11,5 +11,6 @@ void insertionSort(int arr[], int n);
 
 void jalankan_merge_sort();
 void quick_sort(char *arr[], int low, int high);
+    void jalankan_quick_sort();
 
 #endif
