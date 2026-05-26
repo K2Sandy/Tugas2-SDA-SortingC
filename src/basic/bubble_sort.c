@@ -1,26 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include "../include/utils.h"
+#include "../include/sorting.h"
 
-#define MAX_INT_DATA 1000
-#define DISPLAY_LIMIT 10 // Jumlah data yang ditampilkan di terminal
-
-// Fungsi untuk menukar dua integer
-void swap_int(int *a, int *b) {
-    int temp = *a;
-    *a = *b;
-    *b = temp;
-}
-
-// Fungsi untuk mengacak data integer
-void shuffle_int_data(int arr[], int n) {
-    for (int i = n - 1; i > 0; i--) {
-        int j = rand() % (i + 1);
-        swap_int(&arr[i], &arr[j]);
-    }
-}
-
-// Fungsi Bubble Sort (Ascending)
 void bubble_sort(int arr[], int n) {
     for (int i = 0; i < n - 1; i++) {
         for (int j = 0; j < n - i - 1; j++) {
@@ -31,41 +14,29 @@ void bubble_sort(int arr[], int n) {
     }
 }
 
-// Fungsi untuk menampilkan sebagian data integer
-void display_int_data(int arr[], int n, const char *msg) {
-    printf("\n%s (Menampilkan %d data pertama):\n", msg, DISPLAY_LIMIT);
-    for (int i = 0; i < DISPLAY_LIMIT && i < n; i++) {
-        printf("%d ", arr[i]);
-    }
-    printf("\n");
-}
-
-// Fungsi Driver untuk menu Bubble Sort
-void handle_bubble_sort() {
-    int data[MAX_INT_DATA];
+void jalankan_bubble_sort() {
+    int data[DATA_SIZE_INT];
     clock_t start, end;
-    double cpu_time_used;
 
-    // 1. Generate 1000 data random
-    for (int i = 0; i < MAX_INT_DATA; i++) {
-        data[i] = rand() % 10000; // Random angka dari 0 - 9999
+    // Generate data random otomatis
+    for (int i = 0; i < DATA_SIZE_INT; i++) {
+        data[i] = rand() % 10000;
     }
 
-    // 2. Lakukan shuffle sesuai ketentuan
-    shuffle_int_data(data, MAX_INT_DATA);
+    // Melakukan pengacakan data (Shuffle) terlebih dahulu
+    shuffleData(data, DATA_SIZE_INT);
+    
+    printf("\n=== BUBBLE SORT: DATA SEBELUM SORTING ===\n");
+    printArray(data, DATA_SIZE_INT, DISPLAY_LIMIT);
 
-    // 3. Tampilkan data sebelum sorting
-    display_int_data(data, MAX_INT_DATA, "=== DATA SEBELUM SORTING ===");
-
-    // 4. Hitung waktu eksekusi Bubble Sort
+    // Hitung waktu eksekusi
     start = clock();
-    bubble_sort(data, MAX_INT_DATA);
+    bubble_sort(data, DATA_SIZE_INT);
     end = clock();
 
-    // 5. Tampilkan data setelah sorting
-    display_int_data(data, MAX_INT_DATA, "=== DATA SETELAH SORTING ===");
+    printf("\n=== BUBBLE SORT: DATA SETELAH SORTING ===\n");
+    printArray(data, DATA_SIZE_INT, DISPLAY_LIMIT);
 
-    // 6. Tampilkan waktu eksekusi
-    cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
-    printf("\nWaktu eksekusi Bubble Sort: %f detik\n", cpu_time_used);
+    double durasi = ((double)(end - start)) / CLOCKS_PER_SEC;
+    printf("\nWaktu eksekusi Bubble Sort: %f detik\n", durasi);
 }
