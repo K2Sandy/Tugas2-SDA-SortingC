@@ -1,7 +1,7 @@
 #ifndef UTILS_H
 #define UTILS_H
 
-// Deklarasi fungsi bantuan
+// fungsi bantuan
 void printArray(int arr[], int n, int limit);
 void shuffleData(int arr[], int n);
 
