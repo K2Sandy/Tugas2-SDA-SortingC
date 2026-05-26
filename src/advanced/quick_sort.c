@@ -35,7 +35,7 @@ void quick_sort(char *arr[], int low, int high) {
 void jalankan_quick_sort() {
     int word_count = 0;
     // Pastikan letak file words.txt berada di satu folder dengan executable (.exe)
-    char **word_list = read_words_file("words.txt", &word_count);
+    char **word_list = read_words_file("data/words.txt", &word_count);
 
     if (word_list == NULL) {
         printf("\n[Error] Gagal membuka file 'words.txt'!\n");

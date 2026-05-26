@@ -72,7 +72,7 @@ void jalankan_merge_sort() {
     int word_count = 0;
     
     // 1. Membaca dataset menggunakan utils
-    char **word_list = read_words_file("words.txt", &word_count);
+    char **word_list = read_words_file("data/words.txt", &word_count);
 
     if (word_list == NULL) {
         printf("\n[Error] Gagal membuka file 'words.txt'!\n");
