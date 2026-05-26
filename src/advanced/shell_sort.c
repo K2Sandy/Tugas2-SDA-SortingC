@@ -24,3 +24,15 @@ void Shell_sort(char *arr[], int n) {
         }
     }
 }
+
+void jalankan_Shell_sort() {
+    int word_count = 0;
+    
+    // 1. Membaca dataset menggunakan utils
+    char **word_list = read_words_file("advanced/data/words.txt", &word_count);
+
+    if (word_list == NULL) {
+        printf("\n[Error] Gagal membuka file 'words.txt'!\n");
+        printf("Pastikan file diletakkan di tempat yang benar.\n");
+        return;
+    }
