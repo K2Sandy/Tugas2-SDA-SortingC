@@ -29,7 +29,7 @@ int main() {
                 scanf("%d", &pilihan_sub);
 
                 if (pilihan_sub == 1) {
-                    // Isi sendiri yak
+                    jalankan_bubble_sort();
                 } 
                 else if (pilihan_sub == 2) {
                     jalankanInsertionSort(); 
