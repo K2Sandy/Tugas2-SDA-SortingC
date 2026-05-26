@@ -28,7 +28,7 @@ void jalankanInsertionSort() {
     // Shuffle data menggunakan fungsi dari utils.c
     shuffleData(data, n);
 
-    printf("\nData Sebelum sorting:\n");
+    printf("\n=== INSERTION SORT: DATA SEBELUM SORTING ===\n");
     printArray(data, n, 10);
 
     // Hitung waktu dan jalankan algoritma murni
@@ -36,7 +36,7 @@ void jalankanInsertionSort() {
     insertionSort(data, n);
     clock_t end_time = clock();
 
-    printf("\nData Setelah sorting:\n");
+    printf("\n=== INSERTION SORT: DATA SETELAH SORTING ===\n");
     printArray(data, n, 10);
 
     // Kalkulasi dan print waktu

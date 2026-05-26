@@ -9,10 +9,10 @@ int main() {
     srand(time(NULL)); 
 
     while (1) { 
-        printf("\n=================================\n");
-        printf("           MENU UTAMA            \n");
-        printf("=================================\n");
-        printf("1. Sorting Dasar\n");
+        printf("\n===========================================\n");
+        printf("    TUGAS 2: ANALISIS ALGORITMA SORTING    \n");
+        printf("===========================================\n");
+        printf("1. Basic Sorting\n");
         printf("2. Advance Sorting\n");
         printf("3. Keluar\n");
         printf("Pilih menu: ");
@@ -20,7 +20,9 @@ int main() {
 
         if (pilihan_utama == 1) {
             while (1) { 
-                printf("\n--- SORTING DASAR ---\n");
+                printf("\n============================\n");
+                printf("        BASIC SORTING       \n");
+                printf("============================\n");
                 printf("1. Bubble Sort\n");
                 printf("2. Insertion Sort\n");
                 printf("3. Selection Sort\n");
@@ -47,7 +49,9 @@ int main() {
         } 
         else if (pilihan_utama == 2) {
             while (1) { 
-                printf("\n--- ADVANCE SORTING ---\n");
+                printf("\n============================\n");
+                printf("       ADVANCE SORTING       \n");
+                printf("============================\n");
                 printf("1. Merge Sort\n");
                 printf("2. Quick Sort\n");
                 printf("3. Shell Sort\n");

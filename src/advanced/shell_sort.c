@@ -41,7 +41,7 @@ void jalankan_Shell_sort() {
     // 2. Mengacak data menggunakan utils
     shuffleDataString(word_list, word_count);
 
-    printf("\n=== Shell Sort: DATA SEBELUM SORTING ===\n");
+    printf("\n=== SHELL Sort: DATA SEBELUM SORTING ===\n");
     printArrayString(word_list, word_count, DISPLAY_LIMIT);
 
     // 3. Hitung waktu eksekusi
@@ -49,7 +49,7 @@ void jalankan_Shell_sort() {
     Shell_sort(word_list, word_count);
     clock_t end = clock();
 
-    printf("\n=== Shell SORT: DATA SETELAH SORTING ===\n");
+    printf("\n=== SHELL SORT: DATA SETELAH SORTING ===\n");
     printArrayString(word_list, word_count, DISPLAY_LIMIT);
 
     // 4. Kalkulasi durasi
