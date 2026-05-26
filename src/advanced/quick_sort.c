@@ -5,7 +5,6 @@
 #include "../include/utils.h"
 #include "../include/sorting.h"
 
-#define DATA_SIZE_INT 1000
 #define DISPLAY_LIMIT 10
 
 int partition(char *arr[], int low, int high) {
