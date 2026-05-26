@@ -3,7 +3,7 @@
 #include "../include/utils.h"
 
 
-//  NI UTILS YANG AWAK PAKEK, KALO KALIAN BEDA, BEBASI AJA SI
+//  NI UTILS YANG AWAK PAKEK, KALO KALIAN BEDA, BEBAS AJA SI
 void printArray(int arr[], int n, int limit) {
     for (int i = 0; i < limit && i < n; i++) {
         printf("%d ", arr[i]);
